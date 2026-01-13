@@ -1,1 +1,1 @@
-# Magic-cup-bata
+npm install\nnode backend/server.js\nopen frontend/index.html

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Magic Cup Final</title>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+<canvas id='gameCanvas' width='800' height='600'></canvas>
+
+<!-- Login/Register -->
+<div id='loginPanel'>
+<input id='username' placeholder='Username'>
+<input id='password' type='password'>
+<button onclick='register()'>Register</button>
+<button onclick='login()'>Login</button>
+</div>
+
+<!-- Shop -->
+<div id='shop'>
+<h3>Shop</h3>
+<button onclick='buyPremium()'>Buy Premium ($10 / year)</button>
+<button onclick='buyLightScars(1000)'>Buy 1000 Light Scars</button>
+<button onclick='buyExp()'>Buy 1,000,000 EXP (1,000 LS)</button>
+<p>Light Scars: <span id='ls'>0</span></p>
+</div>
+
+<!-- Locker -->
+<div id='locker'>
+<h3>Locker</h3>
+<h4>Gear</h4>
+<select id='gearSelect'></select>
+<button onclick='equipGear()'>Equip Gear</button>
+
+<h4>Skins</h4>
+<select id='skinSelect'></select>
+<button onclick='buySkin()'>Buy Skin</button>
+<button onclick='equipSkin()'>Equip Skin</button>
+</div>
+
+<!-- Admin Panel -->
+<div id='adminPanel'>
+<h3>Admin Panel</h3>
+<input id='adminKey' placeholder='Admin Key'>
+<input id='adminPlayer' placeholder='Player ID'>
+<button onclick='adminUnlockAll()'>Give All to Player</button>
+</div>
+
+<script src='game.js'></script>
+</body>
+</html>

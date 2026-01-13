@@ -1,0 +1,4 @@
+body { margin:0; background:#111; color:white; font-family:sans-serif; }
+canvas { display:block; margin:auto; background:#222; }
+div { background:#333; padding:10px; margin:10px; border-radius:8px; }
+button,input,select { width:100%; margin:5px 0; padding:8px; }
